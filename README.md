@@ -9,9 +9,9 @@ Integration between VK group/public and discord channel.
 ```
 
 # Config
-  "vk_group_id"          - ID of your VK group 
-  "vk_confirmation_code" - confirmation code from VK (more information about [VK Callback API](https://vk.com/dev/callback_api))
-  "discord_webhook_url"  - Discord Webhook URL (more information about [Discord Webhooks](https://support.discordapp.com/hc/en-us/articles/228383668-Intro-to-Webhooks))
+ > "vk_group_id"          - ID of your VK group 
+ > "vk_confirmation_code" - confirmation code from VK (more information about [VK Callback API](https://vk.com/dev/callback_api))
+ > "discord_webhook_url"  - Discord Webhook URL (more information about [Discord Webhooks](https://support.discordapp.com/hc/en-us/articles/228383668-Intro-to-Webhooks))
 
 # Run
 ```
