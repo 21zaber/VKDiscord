@@ -3,6 +3,7 @@
 from flask import Flask, request
 from json import loads
 from pprint import pprint
+import time
 
 from discord_hooks import Webhook
 
@@ -48,7 +49,7 @@ def proccess_new_post(post):
    
     # create Webhook object
     wh = Webhook(config['discord_webhook_url'], msg=msg)
-    wh.set_desc('https://vk.com/wall-{}_{}'.format(config['vk_group_id'], post['id']))
+    wh.set_footer(text='https://vk.com/wall-{}_{}'.format(config['vk_group_id'], post['id']), ts=time.time())
 
     # set image
     if photos:
